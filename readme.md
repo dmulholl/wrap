@@ -10,9 +10,18 @@ output := wrap.Wrap(text, limit)
 
 Line-length in the output is guaranteed to be within the specified `limit`.
 
+* [Documentation](https://pkg.go.dev/github.com/dmulholl/wrap)
+
+
 
 ## Caveats
 
 Line-length is specified as a simple `rune` count, i.e. as a count of Unicode code-points.
 
 This library doesn't attempt to account for display-width issues with double-width code-points or multi-code-point grapheme clusters, e.g. emojis.
+
+
+
+## License
+
+Zero-Clause BSD (0BSD).
